@@ -1,8 +1,7 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import Layout from "./layouts/layout";
-import Home from "./pages/Home";
 import AuthCallbackPage from "./pages/AuthCallbackPage";
-import UserProfileForm from "./forms/user-profile-form/UserProfileForm";
+import Home from "./pages/Home";
 import UserProfilePage from "./pages/UserProfilePage";
 
 const AppRoutes = () => {
