@@ -1,9 +1,10 @@
 import { Navigate, Route, Routes } from "react-router-dom";
+import ProtectedRoute from "./auth/ProtectedRoute";
 import Layout from "./layouts/layout";
 import AuthCallbackPage from "./pages/AuthCallbackPage";
 import Home from "./pages/Home";
+import ManageRestaurantpage from "./pages/ManageRestaurantpage";
 import UserProfilePage from "./pages/UserProfilePage";
-import ProtectedRoute from "./auth/ProtectedRoute";
 
 const AppRoutes = () => {
   return (
@@ -24,6 +25,15 @@ const AppRoutes = () => {
           element={
             <Layout>
               <UserProfilePage />
+            </Layout>
+          }
+        />
+
+        <Route
+          path="/manage-restaurant"
+          element={
+            <Layout>
+              <ManageRestaurantpage />
             </Layout>
           }
         />
