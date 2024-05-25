@@ -32,3 +32,26 @@ export type Restaurant = {
     lastUpdated: string;
   };
 };
+
+export type RestaurantItem = {
+  _id: string;
+  user: string;
+  restaurantName: string;
+  city: string;
+  country: string;
+  deliveryPrice: number;
+  estimatedDeliveryTime: number;
+  cuisines: string[];
+  menuItems: MenuItem[];
+  imageUrl: string;
+  lastUpdated: string;
+};
+
+export type RestaurantSeachRequest = {
+  data: RestaurantItem[];
+  pagination: {
+    total: number;
+    page: number;
+    pages: number;
+  };
+};
